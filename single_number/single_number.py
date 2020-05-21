@@ -5,7 +5,14 @@ Returns: an integer
 def single_number(arr):
     # Your code here
 
-    pass
+    for i in range(len(arr)):
+        num =  arr.pop(0)
+        if num in arr:
+            arr.append(num)
+        else:
+            return num
+
+  
 
 
 if __name__ == '__main__':
